@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #e0e0e0;
+  background: linear-gradient(to bottom right, #1a1a1a, #0d0d0d);
+  min-height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/gothic.png');
+  background-size: contain;
+  position: relative;
+  overflow-x: hidden;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.75);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Crimson Text', serif;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  margin: 1rem 0 1rem 1.5rem;
+  list-style: square;
+}
+
+p {
+  color: #ccc;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay {
+  animation: fadeIn 1.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-up {
+  animation: fadeUp 2.4s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
